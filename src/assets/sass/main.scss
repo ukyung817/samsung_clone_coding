@@ -1,0 +1,744 @@
+.wrap {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 100vh;
+}
+
+.Section1_wrap {
+    position: relative;
+    width: 100%;
+    height: 960px;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .text {
+        position: relative;
+        left: 50%;
+        top: 55%;
+        z-index: 10;
+
+        p {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .text_button {
+            display: flex;
+            gap: 20px;
+
+            p {
+                font-size: 17px;
+                font-weight: 700;
+                border-bottom: 2px solid black;
+                cursor: pointer;
+            }
+
+        }
+
+        button {
+            width: 130px;
+            height: 50px;
+            border: 0.5px solid;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 17px;
+            background-color: transparent;
+            color: black;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: black;
+            color: #fff;
+        }
+    }
+}
+
+.slick-next-custom,
+.slick-prev-custom {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+
+    svg {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.Section2_wrap {
+
+    img {
+        width: 100%;
+    }
+
+    .Section2_text {
+        position: relative;
+        margin-bottom: -85px;
+        z-index: 11;
+        left: 80px;
+        top: -340px;
+        display: flex;
+        gap: 20px;
+
+        p {
+            font-size: 17px;
+            color: #fff;
+            font-weight: 700;
+            border-bottom: 2px solid #fff;
+            cursor: pointer;
+        }
+
+        button {
+            width: 130px;
+            height: 50px;
+            border: 0.5px solid;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 17px;
+            background-color: transparent;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: black;
+        }
+    }
+
+    .product1_wrap {
+        .slick-slide>div {
+            margin: 0 20px;
+            width: 450px;
+        }
+
+        .product1_1,
+        .product1_2,
+        .product1_3,
+        .product1_4,
+        .product1_5,
+        .product1_6,
+        .product1_7,
+        .product1_8 {
+            background-color: #F8F8F8;
+            height: 470px;
+            text-align: center;
+
+            img {
+                width: 430px;
+                margin-top: -80px;
+                margin-left: 10px;
+                transition: transform 0.3s;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: scale(1.04);
+            }
+
+            h1 {
+                z-index: 10;
+                font-size: 35px;
+                top: 20px;
+                position: relative;
+            }
+
+            button {
+                background-color: black;
+                color: #fff;
+                width: 150px;
+                height: 55px;
+                border-radius: 40px;
+                cursor: pointer;
+                // display: none;
+                position: relative;
+                font-weight: 700;
+                font-size: 20px;
+                top: -85px;
+            }
+        }
+
+        .slick-next-custom {
+            position: relative;
+            top: -265px;
+            left: 95%;
+        }
+
+        .slick-prev-custom {
+            position: relative;
+            top: 250px;
+            rotate: (-180deg);
+            left: 1.5%;
+            z-index: 4;
+        }
+    }
+}
+
+
+.Section3_wrap {
+    margin-top: -40px;
+    margin-bottom: -40px;
+
+    .Section3_text {
+        position: relative;
+        margin-bottom: -340px;
+        z-index: 11;
+        left: 80px;
+        top: -750px;
+
+        h1 {
+            font-size: 70px;
+            font-weight: bold;
+            margin-bottom: -10px;
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+
+        .Section3_text_button {
+            display: flex;
+            gap: 20px;
+
+            p {
+                font-size: 17px;
+                color: black;
+                font-weight: 700;
+                border-bottom: 2px solid black;
+                cursor: pointer;
+            }
+
+            button {
+                width: 130px;
+                height: 50px;
+                border: 0.5px solid;
+                border-radius: 40px;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 17px;
+                background-color: transparent;
+                color: black;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                background-color: black;
+                color: #fff;
+            }
+        }
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .product2_wrap {
+        .slick-slide>div {
+            margin: 0 20px;
+            width: 450px;
+        }
+
+        .product2_1,
+        .product2_2,
+        .product2_3,
+        .product2_4,
+        .product2_5,
+        .product2_6,
+        .product2_7 {
+            background-color: #F8F8F8;
+            height: 470px;
+            text-align: center;
+
+            img {
+                width: 430px;
+                margin-top: -80px;
+                margin-left: 10px;
+                transition: transform 0.3s;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: scale(1.04);
+            }
+
+            h1 {
+                z-index: 10;
+                font-size: 35px;
+                top: 20px;
+                position: relative;
+            }
+
+            button {
+                background-color: black;
+                color: #fff;
+                width: 150px;
+                height: 55px;
+                border-radius: 40px;
+                cursor: pointer;
+                // display: none;
+                position: relative;
+                font-weight: 700;
+                font-size: 17px;
+                top: -85px;
+            }
+        }
+
+        .slick-next-custom {
+            position: relative;
+            top: -265px;
+            left: 95%;
+        }
+
+        .slick-prev-custom {
+            position: relative;
+            top: 250px;
+            rotate: (-180deg);
+            left: 1.5%;
+            z-index: 4;
+        }
+    }
+}
+
+.Section4_wrap {
+    margin-bottom: -60px;
+
+    .Section4_text {
+        position: relative;
+        margin-bottom: -340px;
+        z-index: 11;
+        left: 80px;
+        top: -750px;
+
+        h1 {
+            font-size: 70px;
+            font-weight: bold;
+            margin-bottom: -10px;
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+
+        .Section4_text_button {
+            display: flex;
+            gap: 20px;
+
+            p {
+                font-size: 17px;
+                color: black;
+                font-weight: 700;
+                border-bottom: 2px solid black;
+                cursor: pointer;
+            }
+
+            button {
+                width: 130px;
+                height: 50px;
+                border: 0.5px solid;
+                border-radius: 40px;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 17px;
+                background-color: transparent;
+                color: black;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                background-color: black;
+                color: #fff;
+            }
+        }
+    }
+
+    .product3_wrap {
+        .slick-slide>div {
+            margin: 0 20px;
+            width: 450px;
+        }
+
+        .product3_1,
+        .product3_2,
+        .product3_3,
+        .product3_4,
+        .product3_5,
+        .product3_6 {
+            background-color: #F8F8F8;
+            height: 470px;
+            text-align: center;
+
+            img {
+                width: 430px;
+                margin-top: -80px;
+                margin-left: 10px;
+                transition: transform 0.3s;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: scale(1.04);
+            }
+
+            h1 {
+                z-index: 10;
+                font-size: 35px;
+                top: 20px;
+                position: relative;
+            }
+
+            button {
+                background-color: black;
+                color: #fff;
+                width: 150px;
+                height: 55px;
+                border-radius: 40px;
+                cursor: pointer;
+                // display: none;
+                position: relative;
+                font-weight: 700;
+                font-size: 17px;
+                top: -85px;
+            }
+        }
+
+        .slick-next-custom {
+            position: relative;
+            top: -265px;
+            left: 95%;
+        }
+
+        .slick-prev-custom {
+            position: relative;
+            top: 250px;
+            rotate: (-180deg);
+            left: 1.5%;
+            z-index: 4;
+        }
+    }
+}
+
+.Section5_wrap {
+    margin-top: 20px;
+
+
+    .Section5_text {
+        position: relative;
+        margin-bottom: -340px;
+        z-index: 11;
+        left: 80px;
+        top: -750px;
+
+        h1 {
+            font-size: 70px;
+            font-weight: bold;
+            margin-bottom: -10px;
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+
+        .Section5_text_button {
+            display: flex;
+            gap: 20px;
+
+            p {
+                font-size: 17px;
+                color: black;
+                font-weight: 700;
+                border-bottom: 2px solid black;
+                cursor: pointer;
+            }
+
+            button {
+                width: 130px;
+                height: 50px;
+                border: 0.5px solid;
+                border-radius: 40px;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 17px;
+                background-color: transparent;
+                color: black;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                background-color: black;
+                color: #fff;
+            }
+        }
+    }
+
+    .product4_wrap {
+        .slick-slide>div {
+            margin: 0 20px;
+            width: 450px;
+        }
+
+        .product-info-border {
+            width: 700px;
+            height: 10px;
+            border-top: 5px solid rgba(0, 0, 0, 0.1);
+            margin-top: -20px;
+            margin-left: 550px;
+        }
+
+        .product-info-border-fill {
+            border-top: 5px solid #333;
+            transform: translate3d(0px, 0px, 0px) scaleX(0.5) scaleY(1);
+            transition-duration: 300ms;
+            margin-top: -5px;
+            margin-left: -230px;
+        }
+
+        .product4_1,
+        .product4_2,
+        .product4_3,
+        .product4_4,
+        .product4_5,
+        .product4_6,
+        .product4_7,
+        .product4_8 {
+            background-color: #F8F8F8;
+            height: 470px;
+            text-align: center;
+
+            img {
+                width: 420px;
+                margin-top: -80px;
+                margin-left: 10px;
+                transition: transform 0.3s;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: scale(1.04);
+            }
+
+            h1 {
+                z-index: 10;
+                font-size: 35px;
+                top: 20px;
+                position: relative;
+            }
+
+            button {
+                background-color: black;
+                color: #fff;
+                width: 150px;
+                height: 55px;
+                border-radius: 40px;
+                cursor: pointer;
+                // display: none;
+                position: relative;
+                font-weight: 700;
+                font-size: 17px;
+                top: -85px;
+            }
+        }
+
+        .slick-next-custom {
+            position: relative;
+            top: -265px;
+            left: 95%;
+        }
+
+        .slick-prev-custom {
+            position: relative;
+            top: 250px;
+            rotate: (-180deg);
+            left: 1.5%;
+            z-index: 4;
+        }
+
+
+        .section-title {
+            h1 {
+                font-size: 45px;
+                margin-top: 80px;
+                padding-left: 24px;
+                margin-bottom: 0;
+            }
+        }
+
+        .slick-track {
+            margin: 0;
+        }
+
+        .product4_slider {
+            width: 2270px;
+            padding-right: 60px;
+            position: relative;
+            left: -175px;
+        }
+
+        .product-item {
+            background-color: #F8F8F8;
+            max-width: 350px;
+            height: 350px;
+            border-radius: 5%;
+            display: flex;
+
+            .product-name {
+                color: #000000;
+                font-size: 22px;
+                height: 60px;
+                margin-top: -120px;
+            }
+
+            .price-name {
+                color: #555555;
+                font-size: 16px;
+            }
+
+            .original-price {
+                color: #000000;
+                font-size: 20px;
+            }
+
+            img {
+                transition: transform 0.3s;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: scale(1.05);
+            }
+
+        }
+
+        .slick-prev-button,
+        .slick-next-button {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 50% 50%;
+            background-color: rgba(255, 255, 255, 1);
+            cursor: pointer;
+        }
+
+        .slick-next-button {
+            margin-left: 70%;
+            margin-top: 60px;
+        }
+
+        .slick-prev-button {
+            position: relative;
+            top: 613px;
+            left: 67%;
+            rotate: (-180deg);
+            z-index: 4;
+        }
+
+        .product-info {
+            margin-top: 150px;
+        }
+    }
+}
+
+.Section6_wrap {
+    margin-top: 150px;
+    margin-bottom: 130px;
+
+    .product5_wrap {
+        height: 650px;
+
+        .product-info-border {
+            width: 700px;
+            height: 10px;
+            border-top: 5px solid rgba(0, 0, 0, 0.1);
+            margin-top: 70px;
+            margin-left: 550px;
+        }
+
+        .product-info-border-fill {
+            border-top: 5px solid #333;
+            transform: translate3d(0px, 0px, 0px) scaleX(0.5) scaleY(1);
+            transition-duration: 300ms;
+            margin-top: -5px;
+            margin-left: -230px;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-top: 20px;
+            padding-left: 24px;
+            margin-bottom: 0;
+        }
+
+        .product5_slider {
+            width: 2270px;
+
+            p {
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+
+        img {
+            width: 370px;
+            height: 370px;
+            margin-top: 55px;
+            transition: transform 0.3s;
+            cursor: pointer;
+            border-radius: 2%;
+        }
+
+        .slick-prev-button,
+        .slick-next-button {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 50% 50%;
+            background-color: rgba(255, 255, 255, 1);
+            cursor: pointer;
+        }
+
+        .slick-next-button {
+            margin-left: 70%;
+            margin-top: 50px;
+        }
+
+        .slick-prev-button {
+            position: relative;
+            top: 575px;
+            left: 67%;
+            rotate: (-180deg);
+            z-index: 4;
+        }
+
+        .slick-track {
+            margin-left: 0;
+        }
+
+        .product-info {
+            margin-top: 150px;
+        }
+    }
+}

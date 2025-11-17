@@ -1,0 +1,8 @@
+<svg id="그룹_5558" data-name="그룹 5558" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="타원_62" data-name="타원 62" fill="none" stroke="#000" stroke-width="1">
+    <circle cx="8" cy="8" r="8" stroke="none"/>
+    <circle cx="8" cy="8" r="7.5" fill="none"/>
+  </g>
+  <line id="선_58" data-name="선 58" y2="6.222" transform="translate(8 3.111)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+  <line id="선_59" data-name="선 59" y2="1.778" transform="translate(8 11.111)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+</svg>
