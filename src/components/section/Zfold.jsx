@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../assets/sass/zfold.scss'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
@@ -13,6 +13,7 @@ import OrderTop1 from '../../assets/img/order1.webp'
 import OrderTop2 from '../../assets/img/order2.avif'
 import OrderTop3 from '../../assets/img/order3.avif'
 import Gemini from '../../assets/img/gemini.webp'
+import Repair from '../../assets/img/repair.webp'
 
 const PrevArrow = ({ onClick }) => (
   <button className="slick-prev-custom" onClick={onClick}>
@@ -24,30 +25,33 @@ const NextArrow = ({ onClick }) => (
 );
 
 const zfoldData = [
-    {
-        className: "zfold1",
-        title: "zfold1",
-        imageSrc: Zfold1
-    },
-    {
-        className: "zfold2",
-        title: "zfold2",
-        imageSrc: Zfold2
-    },
-    {
-        className: "zfold3",
-        title: "zfold3",
-        imageSrc: Zfold3
-    },
-    {
-        className: "zfold4",
-        title: "zfold4",
-        imageSrc: Zfold4
-    },
+  {
+    className: "zfold1",
+    title: "zfold1",
+    imageSrc: Zfold1
+  },
+  {
+    className: "zfold2",
+    title: "zfold2",
+    imageSrc: Zfold2
+  },
+  {
+    className: "zfold3",
+    title: "zfold3",
+    imageSrc: Zfold3
+  },
+  {
+    className: "zfold4",
+    title: "zfold4",
+    imageSrc: Zfold4
+  },
 
 ];
 
+
+
 const Zfold = () => {
+
   const settings3 = {
     dots: true,
     infinite: true,
@@ -56,6 +60,15 @@ const Zfold = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+  };
+
+
+  const [features, setFeatures] = useState([]);
+
+  const toggleFeature = (feature) => {
+    setFeatures((prev) =>
+      prev.includes(feature) ? prev.filter((f) => f !== feature) : [...prev, feature]
+    );
   };
 
   return (
@@ -88,7 +101,7 @@ const Zfold = () => {
             <p>특장점</p><p>비교하기</p>
           </div>
           <div className="Zfold_event">
-            <p>★갤럭시 AI 매일매일 페스타★<br/>매일 달라지는 11월의 특별 할인 혜택을 확인해보세요!</p>
+            <p>★갤럭시 AI 매일매일 페스타★<br />매일 달라지는 11월의 특별 할인 혜택을 확인해보세요!</p>
             <img src={Toggle} alt="" />
           </div>
         </div>
@@ -96,7 +109,7 @@ const Zfold = () => {
           <div className="Zfold_img">
             <Slider {...settings3} className="Zfold_img_wrap">
               {zfoldData.map((zfold) => (
-                  <img src={zfold.imageSrc} alt={zfold.title} />
+                <img src={zfold.imageSrc} alt={zfold.title} />
               ))}
             </Slider>
           </div>
@@ -108,17 +121,44 @@ const Zfold = () => {
             </div>
             <div className="order_type">
               <h4>구매 방식</h4>
-              <div className="order_type1"><h3>자급제</h3><p>새 기기만 사서 자유롭게 쓸래요</p></div>
-              <div className="order_type2"><h3>통신사폰</h3><p>원하는 통신사와 요금제를 자유롭게 선택할래요</p></div>
+              <div className={`order_type1 ${features.includes("자급제") ? "selected" : ""}`}
+                onClick={() => toggleFeature("자급제")}><h3>자급제</h3><p>새 기기만 사서 자유롭게 쓸래요</p></div>
+              <div className={`order_type2 ${features.includes("통신사폰") ? "selected" : ""}`}
+                onClick={() => toggleFeature("통신사폰")}><h3>통신사폰</h3><p>원하는 통신사와 요금제를 자유롭게 선택할래요</p></div>
             </div>
             <div className="order_model">
-             <h4>모델</h4>
-             <div className="order_model_box"><h3>갤럭시 Z 폴드7</h3></div>
-             
+              <h4>모델</h4>
+              <div className={`order_model_box ${features.includes("갤럭시 Z 폴드") ? "selected" : ""}`}
+                onClick={() => toggleFeature("갤럭시 Z 폴드")}><h3>갤럭시 Z 폴드7</h3></div>
+              <img src={Gemini} alt="" />
             </div>
-            <div className="order_data"></div>
+            <div className="order_data">
+              <h4>용량</h4>
+              <div className={`order_data1 ${features.includes("256GB") ? "selected" : ""}`}
+                onClick={() => toggleFeature("256GB")}><h3>256GB <span>| 12GB</span></h3><p>기준가 2,379,300원</p></div>
+              <div className={`order_data2 ${features.includes("512GB") ? "selected" : ""}`}
+                onClick={() => toggleFeature("512GB")}><h3>512GB <span>| 12GB</span></h3><p>기준가 2,537,700원</p></div>
+              <div className={`order_data3 ${features.includes("1TB") ? "selected" : ""}`}
+                onClick={() => toggleFeature("1TB")}><h3>1TB <span>| 16GB</span></h3><p>기준가 2,933,700원</p></div>
+            </div>
             <div className="order_color"></div>
             <div className="order_amount"></div>
+          </div>
+        </div>
+        <div className="Zfold_subscribe">
+          <div className="Zfold_subscribe_title">
+            <h3>NEW 갤럭시 AI 구독클럽 | 월 8,900원으로 최신 갤럭시를 반값에 파손 보장까지</h3><p>자세히 보기</p></div>
+          <img src={Repair} alt="" />
+          <div className="Zfold_subscribe_box">
+            <div className={`Zfold_subscribe_box1 ${features.includes("12개월") ? "selected" : ""}`}
+                onClick={() => toggleFeature("12개월")}><h3>12개월 신청하기</h3></div>
+            <div className={`Zfold_subscribe_box2 ${features.includes("24개월") ? "selected" : ""}`}
+                onClick={() => toggleFeature("24개월")}><h3>24개월 신청하기</h3></div>
+            <div className={`Zfold_subscribe_box3 ${features.includes("신청") ? "selected" : ""}`}
+                onClick={() => toggleFeature("신청")}><h3>신청 안 함</h3></div>
+          </div>
+          <div className="Zfold_subscribe_text">
+            <p></p>
           </div>
         </div>
       </div>

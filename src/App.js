@@ -17,9 +17,9 @@ const App = () => {
       <main className='main'>
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path="Cart" element={<Cart />} />
-          <Route path="Zfold" element={<Zfold />} />
-          <Route path="Login" element={<Login />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Zfold" element={<Zfold />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/section/Login" element={<Login />} />
         </Routes>
       </main>
