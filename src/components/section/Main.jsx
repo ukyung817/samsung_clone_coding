@@ -74,7 +74,7 @@ const Main = () => {
 
         <div className="Section2">
           <div className="Section2_wrap">
-            <img src={Section2} alt="Section 2" />
+            <img src={Section2} />
             <div className="Section2_text">
               <p>더 알아보기</p>
               <button>구매하기</button></div>
@@ -92,7 +92,7 @@ const Main = () => {
 
         <div className="Section3">
           <div className="Section3_wrap">
-            <img src={Section3} alt="Section 3" width={1920} />
+            <img src={Section3} width={1920} />
             <div className="Section3_text">
               <h1>2025 Neo QLED TV</h1>
               <p>으뜸효율가전도 삼닷에서 만나보세요</p>

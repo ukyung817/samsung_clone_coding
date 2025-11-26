@@ -122,7 +122,7 @@ const Header = () => {
                 <ul>
                   {currentActiveMenuData.subCategories.map((cat, idx) => (
                     <li key={`subcat-${idx}`}>
-                      <a href="#">{cat}</a>
+                      <a href="/">{cat}</a>
                     </li>
                   ))}
                 </ul>

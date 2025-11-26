@@ -17,7 +17,7 @@ const Footer = () => {
               <ul className="submenu">
                 {section.items.map((item, itemIndex) => (
                   <li key={itemIndex} id={itemIndex === 0 ? 'sub1' : undefined}>
-                    <a href="#" dangerouslySetInnerHTML={{ __html: item }}></a>
+                    <a href="/" dangerouslySetInnerHTML={{ __html: item }}></a>
                   </li>
                 ))}
               </ul>
