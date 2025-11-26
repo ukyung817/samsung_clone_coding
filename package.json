@@ -11,8 +11,6 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.4",
-    "build": "CI=false npm run react-build",
-    "react-build": "react-scripts build",
     "react-scripts": "5.0.1",
     "react-slick": "^0.31.0",
     "sass": "^1.94.2",
@@ -21,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
